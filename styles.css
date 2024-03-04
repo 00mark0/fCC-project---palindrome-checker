@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Syne Mono', monospace;
+  background: linear-gradient(to bottom, #040026, #09091e, #000000);
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header img {
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 500px;
+  background-color: #fef5e7;
+  color: green;
+  border-radius: 30px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #3d5a80;
+  font-weight: bold;
+}
+
+.container input {
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #d0d0d0;
+  text-align: center;
+  font-family: 'Syne Mono', monospace;
+}
+
+.container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d5a80;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #98c1d9;
+}
+
+.container .result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #fda728;
+  color: #212121;
+  border-radius: 30px;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .container p,
+  .container input,
+  .container button,
+  .container .result,
+  .info {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container p,
+  .container input,
+  .container button,
+  .container .result,
+  .info {
+    font-size: 0.9rem;
+  }
+}
